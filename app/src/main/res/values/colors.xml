@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="white_100">#FFFFFF</color>
+
+    <color name="colorPrimaryDarkBlack">@color/blue_500</color>
+
+    <!--<color name="colorAccent">#607D8B</color>-->
+    <color name="colorSecondryDark">#036e64</color>
+    <color name="divider">#B6B6B6</color>
+
+
+    <color name="light_gray">#ABBAC2</color>
+
+    <!--Material color-->
+    <color name="black">#000000</color>
+    <color name="pink">#FF4081</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deepblue">#7C4DFF</color>
+    <color name="deepbrown">#5D4037</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#448AFF</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="deeppurple">#512DA8</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="bluegrey">#607D8B</color>
+
+    <color name="light_yellow">#FFEB3B</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="yellow_dark">#FFA000</color>
+
+    <color name="red_dark">#D32F2F</color>
+
+    <color name="red_500">#F44336</color>
+    <color name="red_200">#EF9A9A</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="brown_500">#795548</color>
+    <color name="brown_200">#BCAAA4</color>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <color name="grey_trans">#79e4e1e1</color>
+    <color name="deep_pink">#C2185B</color>
+
+    <color name="deep_purple">#673AB7</color>
+    <color name="deep_orange">#FF5722</color>
+
+
+    <color name="trans_black_75">#BF000000</color>
+    <color name="trans_black_85">#D9000000</color>
+    <color name="trans_black_90">#E6000000</color>
+    <color name="trans_black_65">#A6000000</color>
+    <color name="trans_black_55">#8C000000</color>
+    <color name="trans_black_50">#80000000</color>
+    <color name="trans_black_35">#59000000</color>
+    <color name="trans_black_5">#0D000000</color>
+
+    <!-- Google's Material Design Color Palette (http://www.google.com/design/spec/style/color.html#color-color-palette) -->
+    <color name="blue_500">#2196F3</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_200">#EEEEEE</color>
+
+    <color name="primary3">#9C27B0</color>
+
+
+    <color name="greenEnd">#ff1da130</color>
+
+    <!--FAB menu-->
+    <color name="background">#e5e5e5</color>
+
+    <!-- Circle Progress $ -->
+
+    <array name="rainbow">
+        <item>@color/colorSecondryDark</item>
+        <item>@color/indigo</item>
+        <item>@color/pink</item>
+        <item>@color/purple</item>
+        <item>@color/deepbrown</item>
+        <item>@color/deeppurple</item>
+        <item>@color/blue</item>
+        <item>@color/deepblue</item>
+        <item>@color/bluegrey</item>
+        <item>@color/cyan</item>
+        <item>@color/colorSecondryDark</item>
+        <item>@color/indigo</item>
+        <item>@color/blue_500</item>
+        <item>@color/purple</item>
+        <item>@color/colorSecondryDark</item>
+        <item>@color/cyan</item>
+        <item>@color/blue</item>
+        <item>@color/deepblue</item>
+        <item>@color/blue_500</item>
+        <item>@color/primary3</item>
+        <item>@color/bluegrey</item>
+        <item>@color/deeppurple</item>
+        <item>@color/accent_500</item>
+        <item>@color/deep_indigo</item>
+        <item>@color/orange_500</item>
+        <item>@color/red_dark</item>
+        <item>@color/blue</item>
+        <item>@color/greenEnd</item>
+    </array>
+
+    <!--Indigo 700-->
+    <color name="deep_indigo">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+
+    <color name="white">#ffffff</color>
+
+
+</resources>

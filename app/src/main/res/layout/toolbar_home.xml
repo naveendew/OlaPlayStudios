@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="start"
+    android:background="@color/colorPrimary"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    android:fitsSystemWindows="false"
+    android:gravity="start"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:elevation="0dp"
+    app:theme="@style/ToolbarStyle"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/home_page_vehlist_height"
+                android:layout_height="@dimen/home_page_vehlist_height"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:padding="@dimen/padding_normal"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_toolTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/padding_normal"
+                android:layout_toRightOf="@+id/iv_logo"
+                android:gravity="start"
+                android:text="@string/app_name"
+                android:textColor="@color/white_100"
+                android:textSize="@dimen/mycar_card_title"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

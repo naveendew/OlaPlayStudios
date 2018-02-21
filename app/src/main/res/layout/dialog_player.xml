@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:clickable="false"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/media_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCoverImage_"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_pager_card"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loader_2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivCoverImage_"
+                android:background="@color/trans_black_50"
+                android:paddingBottom="@dimen/padding_normal"
+                android:paddingTop="@dimen/padding_normal">
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/iv_fav"
+                    android:id="@+id/tvSongName_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="Song Name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mycar_card_title_mid"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/iv_fav"
+                    android:id="@+id/tvArtistsName_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSongName_"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="Artist Name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mycar_card_title_mid"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/iv_fav"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_star"
+                    android:scaleType="fitXY"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/time_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="4dip"
+                    android:paddingTop="4dip"
+                    android:text="00:00"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/mediacontroller_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/player_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="4dip"
+                    android:paddingTop="4dip"
+                    android:text="00:00"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/fullscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="-7dp"
+                    android:background="@android:color/transparent"
+                    android:paddingBottom="4dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="4dip"
+                    android:paddingTop="4dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_loadtrack"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnPrev"
+                    style="@android:style/MediaButton.Previous" />
+
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    style="@android:style/MediaButton.Play" />
+
+                <ImageButton
+                    android:id="@+id/btnNext"
+                    style="@android:style/MediaButton.Next" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_LoadProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

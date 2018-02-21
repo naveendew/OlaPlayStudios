@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dewnaveen.olaplaystudios.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_songs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/media_controller"
+        android:layout_marginTop="70dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/iv_refresh"
+            android:layout_width="@dimen/home_pager_circle"
+            android:layout_height="@dimen/home_pager_circle"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cloud"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_seacrh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:background="@color/transparent">
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/floating_search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:layout_marginTop="4dp"
+            app:floatingSearch_backgroundColor="@color/white_100"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"
+            app:floatingSearch_dimBackground="false"
+            app:floatingSearch_hintTextColor="@color/grey"
+            app:floatingSearch_leftActionMode="noLeftAction"
+            app:floatingSearch_searchBarMarginLeft="@dimen/padding_normal"
+            app:floatingSearch_searchBarMarginRight="@dimen/padding_normal"
+            app:floatingSearch_searchHint="Search Song ..."
+            app:floatingSearch_searchSuggestionTextSize="14sp"
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_suggestionsListAnimDuration="250"
+            app:floatingSearch_viewSearchInputTextColor="@color/colorPrimaryDark" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

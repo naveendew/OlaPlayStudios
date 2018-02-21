@@ -1,0 +1,48 @@
+<resources>
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="nav_profile_height">50dp</dimen>
+    <dimen name="home_pager_card">240dp</dimen>
+    <dimen name="mycar_card_title">15sp</dimen>
+    <dimen name="mycar_card_news_title">18sp</dimen>
+    <dimen name="mycar_card_subtitle">12sp</dimen>
+
+    <dimen name="mycar_card_title_mid">14sp</dimen>
+    <dimen name="mycar_card_subtitle_low">9sp</dimen>
+
+
+    <dimen name="home_pager_circle">115dp</dimen>
+    <dimen name="home_pager_service_card_text">90dp</dimen>
+    <dimen name="home_page_vehlist_height">36dp</dimen>
+    <dimen name="home_page_vehlist_width">54dp</dimen>
+
+    <dimen name="main_menu_card_bottom">60dp</dimen>
+
+    <dimen name="card_margin">20dp</dimen>
+    <dimen name="signin_margin2">10dp</dimen>
+    <dimen name="padding_normal">6dp</dimen>
+
+    <dimen name="padding_medium">9dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <!-- Nofication bar button -->
+    <dimen name="status_bar_button_width_height">48dp</dimen>
+    <dimen name="status_bar_album_art">64dp</dimen>
+    <dimen name="status_bar_button_info_container_padding_left">11dp</dimen>
+    <dimen name="notification_expanded_height">128.0dip</dimen>
+    <dimen name="play_controls_notification">48.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+</resources>
